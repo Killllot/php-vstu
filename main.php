@@ -34,27 +34,28 @@
     $mass_count = rand(7,10);
     echo $mass_count;
     echo "<br/>";
+    echo "<br/>";
     $arr[] = 0;
-    for ($j = 1; $j < $mass_count ; $j++) {
+    for ($j = 0; $j <= $mass_count ; $j++) {
         $arr[$j] = $j;
         echo $arr[$j];
         echo "<br/>";
     }
     echo "Сортировка по возрпастанию: <br/>";
-    print sort($arr);
-    for ($j = 1; $j < $mass_count ; $j++) {
+    sort($arr);
+    for ($j = 0; $j <= $mass_count ; $j++) {
         echo $arr[$j];
     }
     echo "<br/>";
     echo "Сортировка по убыванию:<br />";
-    print rsort($arr);
-    for ($j = 1; $j < $mass_count ; $j++) {
+    rsort($arr);
+    for ($j = 0; $j <= $mass_count ; $j++) {
         echo $arr[$j];
     }
     echo "<br/>";
     echo "Перемешывание: <br />";
-    print shuffle($arr);
-    for ($j = 1; $j < $mass_count ; $j++) {
+    shuffle($arr);
+    for ($j = 1; $j <= $mass_count ; $j++) {
         echo $arr[$j];
     }
     echo "<br/>";
